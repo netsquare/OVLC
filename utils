@@ -1,0 +1,59 @@
+#!/bin/bash
+#
+# Support functions for Lab
+
+LOGFILENAME="docker.log"
+
+log () {
+export LOGFILE="$LOGFILENAME"
+   if [ "$LOGFILE" ]
+   then
+      echo "$*" >> $LOGFILE
+   else
+      touch "$LOGFILENAME"
+      echo "$*" >> $LOGFILE
+   fi
+}
+
+function ctrl_c() {
+       temp=$(tty)
+       ps -ef | grep sshd | grep @${temp:5} | awk '{print "kill -9", $2}' | sh
+}
+
+swap_add () {
+   #SWAP increase in ubuntu if its -le 2GB
+   # Check if we want increase swap file i.e. it is less than 2 GiB
+   if  [ "$(free | awk '/^Swap:/ { print $2 }')" = "0" ] || [ "$(free --bytes | awk '/^Swap:/ { print $2 }')" -lt 2147483648 ] 
+   then
+      swapoff -a
+      dd if=/dev/zero of=/swapfile bs=7G count=8
+      chmod 600 /swapfile
+      mkswap /swapfile
+      swapon /swapfile
+      echo "/swapfile none swap sw 0 0" >> /etc/fstab
+   fi
+}
+
+all_docker_stop () {
+        docker stop $(docker ps -a -q)
+}
+
+all_docker_remove () {
+         docker stop $(docker ps -a -q)
+         docker rm $(docker ps -a -q)
+         #Clear Cache in Linux
+	      sync; echo 1 > /proc/sys/vm/drop_caches
+	      sync; echo 2 > /proc/sys/vm/drop_caches
+	      sync; echo 3 > /proc/sys/vm/drop_caches
+}
+
+update_upgrade (){
+      apt-get -y update
+      apt-get -y upgrade
+}
+
+install_tool (){
+      apt-get -y install git dialog docker.io
+}
+
+

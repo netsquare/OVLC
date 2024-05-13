@@ -1,0 +1,26 @@
+#REPO,TAG,NAME,APP_NAME,ADD_OPTIONS,PORT_ARGS,POST_DOC_CMD,POST_CMD,REF
+webgoat/webgoat,latest,WEBGOAT,13108/9: WEBGOAT,-d,-p 13108:8080 -p 13109:9090,,,https://github.com/WebGoat/WebGoat
+appsecco/dsvw,latest,DSVW,13110: Damn Small Vulnerable Web Application,-d,-p 13110:8000,,,https://github.com/stamparm/DSVW
+hpandro/xxe_docx,latest,DOCX_XXE,13111: XXE via .docx file parsing,-d, -p 13111:80,,,https://raviramesh.info/xml-attacks.html
+hpandro/xpath,latest,XPATH,13112: XPATH Injection,-d, -p 13112:80,,,https://raviramesh.info/xml-attacks.html
+hpandro/simplexxe,latest,XXE,13113: XML external entity (XXE) injection,-d, -p 13113:80,,docker exec XXE service mysql start,https://raviramesh.info/xml-attacks.html
+hpandro/xinclude,latest,XINCLUDE,13114: Exploiting XInclude to retrieve files,-d, -p 13114:80,,,https://raviramesh.info/xml-attacks.html
+hpandro/oscommand_dns,latest,OS_CMD_1,13115: OS COMMAND INJECTION - Blind 1,-d, -p 13115:80,,,
+hpandro/oscommand_blind,latest,OS_CMD_2,13116: OS COMMAND INJECTION - Blind 2,-d, -p 13116:80,,,
+hpandro/cve-2021-41773,latest,PATH_TRAV,13117: PATH TRAVERSAL CVE-2021-41773,-d, -p 13117:80,,,
+hpandro/wsdl,latest,WSDL,13118: WSDL Parsing,-d, -p 13118:80,,,
+hpandro/vims,latest,VIMS,13119: VIMS Application - busker,-d, -p 13119:80,,docker exec VIMS service mysql start,
+hpandro/log4shell,latest,log4shell,13120: Apache Log4j2 2021-44228 POST /hello HTTP/1.1  Content-Type: application/x-www-form-urlencoded payload=xxxxx ,-d, -p 13120:8080,,,
+hpandro/xslt,latest,XSLT,13121: XSLT Injection,-d, -p 13121:80,,,https://raviramesh.info/xml-attacks.html
+appsecco/dvja,latest,DVJA,13122: Damn Vulnerable Java Application,-d,-p 13122:8080,,,https://github.com/appsecco/dvja
+appsecco/dvna,sqlite,DVNA,13123: Damn Vulnerable NodeJS Application,-d,-p 13123:9090,,,https://github.com/appsecco/dvna
+appsecco/node-simple-rce,latest,NODE_RCE,13124: Simple Node app with an RCE,-d,-p 13124:8080,,,https://github.com/appsecco/vulnerable-apps/tree/master/node-simple-rce
+bkimminich/juice-shop,latest,JUICE_SHOP,13125: OWASP Juice Shop,-d,-p 13125:3000,,,https://github.com/juice-shop/juice-shop
+vulnerables/web-dvwa,latest,DVWA,13126: Damn Vulnerable Web Application,-d,-p 13126:80,,,https://github.com/digininja/DVWA
+ianwijaya/hackazon,latest,HACKAZON,13127: Hackazon,-d,-p 13127:80,,,https://github.com/rapid7/hackazon
+neuralegion/beebox,latest,BWAPP,13128: bWAPP bee-box,-d,-p 13128:80,,,https://itsecgames.blogspot.com/
+adamdoupe/wackopicko,latest,WACKOPICKO,13129: WackoPicko ,-d,-p 13129:80,,,https://github.com/adamdoupe/WackoPicko
+neuralegion/brokencrystals,latest,BRO_CRY,13130: Broken Crystals ,-d,-p 13130:3000,,,https://github.com/NeuraLegion/brokencrystals
+neuralegion/xxelab,latest,XXE_LAB,13131: XML eXternal Entity vulnerability ,-d,-p 13131:80,,,https://github.com/NeuraLegion/xxelab
+bhattsameer/jsdebugginglab,latest,JSDEBUGG,13132: Client Side Encryption - JS debugging. ,-d,-p 13132:80,,,https://bhattsameer.github.io/2021/01/01/client-side-encryption-bypass-part-1.html
+hpandro/mutillidae2,latest,MUTIL,13133/34: Mutillidae II v2.6.52 ,-d,-p 13133:80 -p 13134:443,,,https://github.com/webpwnized/mutillidae

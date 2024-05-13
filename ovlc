@@ -1,0 +1,89 @@
+#!/bin/bash
+
+# Check if the user is root
+if [ "$(id -u)" -ne "0" ]; then
+  echo "ovlc must be run as root."
+  exit 1  # Exit with an error code
+fi
+
+source utils
+source parseimages
+
+# Define the dialog exit status codes
+: ${DIALOG_START=0}
+: ${DIALOG_STOP=3}
+: ${DIALOG_EXIT=1}
+
+fundialog=${fundialog=dialog}
+
+trap ctrl_c INT
+
+declare -a choices
+ipaddr=`ip addr | grep "ens" -A 2 | cut -f1 -d'/' |  awk 'FNR == 4 {print $2}'`
+
+while true
+do
+
+upcon=`docker ps`
+num_upcon=`echo "$upcon" | wc -l`
+free_ram_gb=`free --giga | grep -i mem | awk '{print $4}'`
+
+j=1
+for i in $(seq 1 $((count - 1)))
+do
+   choices[$j]=$i
+   up=`echo "$upcon" | grep ${REPONAME[$i]} | wc -l`
+   if [ $up -eq 1 ]
+   then
+        choices[$((j + 1))]="${descs[$i]} *"
+   else
+        choices[$((j + 1))]=${descs[$i]}
+   fi
+   j=$((j + 2))
+done
+
+x=`$fundialog --stdout --clear \
+   --backtitle "OVLC v0.1 ${ipaddr} [Lab Started :$((num_upcon - 1))*] [Free RAM (GB) :${free_ram_gb}]" \
+   --ok-label "START" --cancel-label "EXIT"  \
+   --extra-button --extra-label "STOP"  \
+   --menu "Applications List" 0 0 10 "${choices[@]}" `
+
+status=$?
+
+clear
+
+case $status in
+$DIALOG_START)
+   if [ $free_ram_gb -gt 1 ]
+    then
+      check_status=`echo "$upcon"  | grep "${REPONAME[$x]}" | wc -l`
+      if [ $check_status -eq 0 ]
+      then
+        temp=$(${cmd_start[$x]})
+        for i in $(seq 0 10 100) ; do sleep 4; echo $i ; done | dialog --title "Starting container" \
+        --gauge "${APP_NAME[$x]} \nPort Mapping with IP ${ipaddr} localhost  ${PORT_ARGS[$x]}\nPlease wait for 45 Sec...." 10 70 0
+        temp=$(${cmd_post[$x]})
+      else
+        dialog --title "Status" --msgbox "${APP_NAME[$x]} Docker alrady running.." 0 0
+      fi 
+    else
+        dialog --title "Alert" --msgbox "Free RAM is less then 1 GB, please stop nonusable app first and try again." 0 0
+    fi ;;
+ $DIALOG_STOP)
+     check_status=`echo "$upcon"  | grep "${REPONAME[$x]}" | wc -l`
+     if [ $check_status -eq 0 ]
+     then
+        dialog --title "Status" --msgbox "${APP_NAME[$x]} App not running.." 0 0
+     else
+        temp=$(${cmd_stop[$x]} &)
+        for i in $(seq 0 10 100) ; do sleep 1; echo $i ; done | dialog --title "Stoping container" \
+        --gauge "${APP_NAME[$x]} \nPlease wait for 10 Sec...." 10 70 0
+     fi ;;
+ $DIALOG_EXIT)
+      break ;;
+esac
+
+done
+
+ctrl_c
+exit
