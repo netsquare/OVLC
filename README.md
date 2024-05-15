@@ -13,9 +13,11 @@ Step 1: Install Ubuntu 22.04.3 LTS
 
 Step 2 : Switch to root user
 
-Step 3 : git clone https://github.com/RavikumarRamesh/OVLC.git
+Step 3 : git clone https://github.com/netsquare/OVLC.git
 
 Step 4 : bash setup.sh
+
+Step 5 : reboot
 
 Usage
 ----
