@@ -26,3 +26,4 @@ bhattsameer/jsdebugginglab,latest,JSDEBUGG,13132: Client Side Encryption - JS de
 hpandro/mutillidae2,latest,MUTIL,13133/34: Mutillidae II v2.6.52 ,-d,-p 13133:80 -p 13134:443,,,https://github.com/webpwnized/mutillidae
 amolnaik4/bodhi_app,latest,BODHI,13135/36: Bodhi - Client-Side Vulnerability Playground ,-d,-p 13135:80 -p 13136:8000,,,https://github.com/amolnaik4/bodhi
 owasp/security-shepherd,dev,SHEPHERD,13137: The OWASP Security Shepherd ,-d,-p 13137:8080,,,https://github.com/OWASP/SecurityShepherd
+netsquarelab/app43,v1,ODVWS,13138: OWASP Damn Vulnerable Web Sockets ,-d,-p 13138:80,,,https://github.com/interference-security/DVWS
