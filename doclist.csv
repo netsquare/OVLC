@@ -28,4 +28,5 @@ amolnaik4/bodhi_app,latest,BODHI,13135/36: Bodhi - Client-Side Vulnerability Pla
 owasp/security-shepherd,dev,SHEPHERD,13137: The OWASP Security Shepherd ,-d,-p 13137:8080,,,https://github.com/OWASP/SecurityShepherd
 netsquarelab/app43,v1,ODVWS,13138: OWASP Damn Vulnerable Web Sockets ,-d,-p 13138:80,,,https://github.com/interference-security/DVWS
 appsecco/owasp-webgoat-dot-net,latest,OWGDN,13139: OWASP WebGoat.NET ,-d,-p 13139:9000,,,https://wiki.owasp.org/index.php/Category:OWASP_WebGoat.NET
-contrastsecuritydemo/terracotta-bank,latest,TERRACOTTA,13140: Terracotta Bank: A deliberately insecure Java web application ,-d,-p 13140:8080,,,https://github.com/Try-Inc/terracotta-bank/tree/main
+contrastsecuritydemo/terracotta-bank,latest,TERRACOTTA,13140: Terracotta Bank: A deliberately insecure Java web application ,-d,-p 13140:8080,,,https://github.com/Try-Inc/terracotta-bank
+c0ny1/sqli-labs,0.1,TERRACOTTA,13141: SQLI-LABS ,-d,-p 13141:80,,,https://github.com/Audi-1/sqli-labs
