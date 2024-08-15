@@ -34,3 +34,4 @@ c0ny1/upload-labs,latest,UPLOADLABS,13142: upload-labs ,-d,-p 13142:80,,,https:/
 springcommunity/spring-framework-petclinic,latest,PETCLIN,13143: Spring Framework application based on JSP + Spring MVC + Spring Data JPA + Hibernate and JDBC,-d,-p 13143:8080,,,https://github.com/spring-projects/spring-petclinic
 springcommunity/spring-petclinic-rest,latest,PETCLINREST,13144: REST version of Spring PetClinic Sample Application (Swagger)  ,-d,-p 13144:9966,,,https://github.com/spring-petclinic/spring-petclinic-rest
 netsquarelab/app13,v1,RAILSGOAT,13145: OWASP RailsGoat is a vulnerable version of the Ruby on Rails Framework ,-d,-p 13145:3000,,,https://github.com/OWASP/railsgoat
+netsquarelab/app15,v1,PHPLDAP,13146: phpLDAPadmin is a web based LDAP data management tool ,-d,-p 13146:80,,,https://github.com/leenooks/phpLDAPadmin
