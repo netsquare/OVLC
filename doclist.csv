@@ -33,3 +33,4 @@ c0ny1/sqli-labs,0.1,SQLILAB,13141: SQLI-LABS ,-d,-p 13141:80,,,https://github.co
 c0ny1/upload-labs,latest,UPLOADLABS,13142: upload-labs ,-d,-p 13142:80,,,https://github.com/c0ny1/upload-labs/
 springcommunity/spring-framework-petclinic,latest,PETCLIN,13143: Spring Framework application based on JSP + Spring MVC + Spring Data JPA + Hibernate and JDBC,-d,-p 13143:8080,,,https://github.com/spring-projects/spring-petclinic
 springcommunity/spring-petclinic-rest,latest,PETCLINREST,13144: REST version of Spring PetClinic Sample Application (Swagger)  ,-d,-p 13144:9966,,,https://github.com/spring-petclinic/spring-petclinic-rest
+netsquarelab/app13,v1,RAILSGOAT,13145: OWASP RailsGoat is a vulnerable version of the Ruby on Rails Framework ,-d,-p 13145:3000,,,https://github.com/OWASP/railsgoat
