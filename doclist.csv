@@ -38,5 +38,4 @@ appsecco/owasp-webgoat-dot-net,latest,OWGDN,13147: OWASP WebGoat.NET ,-d,-p 1314
 netsquarelab/app10,v1,NGOAT,13148: NodeGoat ,-d,-p 13148:4000,,, XXXXXXXXXXX
 netsquarelab/app16,v1,SSRF0,13149: SSRF Lab 0 ,-d,-p 13149:8080,,,
 netsquarelab/app17,v1,SSRF1,13150: SSRF Lab 1 ,-d,-p 13150:80,,,
-
-
+netsquarelab/app18,v1,FLMAL,13151: File Less malware for WIn 7 IE v11.x + CVE-2014-6271 ,-d,-p 13151:80,,,
