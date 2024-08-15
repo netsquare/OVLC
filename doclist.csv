@@ -26,7 +26,7 @@ bhattsameer/jsdebugginglab,latest,JSDEBUGG,13132: Client Side Encryption - JS de
 hpandro/mutillidae2,latest,MUTIL,13133/34: Mutillidae II v2.6.52 ,-d,-p 13133:80 -p 13134:443,,,https://github.com/webpwnized/mutillidae
 amolnaik4/bodhi_app,latest,BODHI,13135/36: Bodhi - Client-Side Vulnerability Playground ,-d,-p 13135:80 -p 13136:8000,,,https://github.com/amolnaik4/bodhi
 owasp/security-shepherd,dev,SHEPHERD,13137: The OWASP Security Shepherd ,-d,-p 13137:8080,,,https://github.com/OWASP/SecurityShepherd XXXXXXXXXXXXXXXXXXXXXXXXX
-netsquarelab/app43,v1,ODVWS,13138/39: OWASP Damn Vulnerable Web Sockets ,-d,-p 13138:80 -p 13139:8080,,,https://github.com/interference-security/DVWS ******************* Modify docker and add 13139 port in docker hardcoded
+netsquarelab/app43,v1,ODVWS,13138/39: OWASP Damn Vulnerable Web Sockets ,-d,-p 13138:80 -p 13139:8080,,,https://github.com/interference-security/DVWS
 contrastsecuritydemo/terracotta-bank,latest,TERRACOTTA,13140: Terracotta Bank: A deliberately insecure Java web application ,-d,-p 13140:8080,,,https://github.com/Try-Inc/terracotta-bank
 c0ny1/sqli-labs,0.1,SQLILAB,13141: SQLI-LABS ,-d,-p 13141:80,,,https://github.com/Audi-1/sqli-labs
 c0ny1/upload-labs,latest,UPLOADLABS,13142: upload-labs ,-d,-p 13142:80,,,https://github.com/c0ny1/upload-labs/
