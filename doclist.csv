@@ -43,3 +43,5 @@ netsquarelab/app19,v1,APSTR,13152: Apache Struts2 CVE-2018-11776 ,-d,-p 13152:80
 netsquarelab/app20,v1,XSSCH,13153: XSS Challenge ,-d,-p 13153:80,,,
 netsquarelab/app21,v1,UPL20,13154: Upload 20 Labs ,-d,-p 13154:80,,,
 netsquarelab/app22,v1,XSSED,13155: XSSED XSS ,-d,-p 13155:80,,,
+netsquarelab/app23,v1,WORDP,13156: Vulnerable Wordpress ,-d,-p 13156:80,,,
+netsquarelab/app24,v1,WORDP,13157: Python API [user{1-9}/pass{1-9} admin1/pass1] ,-d,-p 13157:8081,,,
