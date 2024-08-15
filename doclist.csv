@@ -37,7 +37,7 @@ netsquarelab/app15,v1,PHPLDAP,13146: phpLDAPadmin is a web based LDAP data manag
 appsecco/owasp-webgoat-dot-net,latest,OWGDN,13147: OWASP WebGoat.NET ,-d,-p 13147:9000,,,https://wiki.owasp.org/index.php/Category:OWASP_WebGoat.NET
 netsquarelab/app10,v1,NGOAT,13148: NodeGoat ,-d,-p 13148:4000,,, XXXXXXXXXXX
 netsquarelab/app16,v1,SSRF0,13149: Kubernetes Security for Microservices - SSRF ,-d,-p 13149:8080,,,https://github.com/rung/tutorial-gke-security https://speakerdeck.com/rung/kubernetes-security-for-microservices
-netsquarelab/app17,v1,SSRF1,13150: SSRF Lab 1 ,-d,-p 13150:80,,,
+netsquarelab/app17,v1,SSRF1,13150: Server-Side Request Forgery (SSRF) vulnerable Lab ,-d,-p 13150:80,,,https://github.com/incredibleindishell/SSRF_Vulnerable_Lab
 netsquarelab/app18,v1,FLMAL,13151: File Less malware for WIn 7 IE v11.x + CVE-2014-6271 ,-d,-p 13151:80,,,
 netsquarelab/app19,v1,APSTR,13152: Apache Struts2 CVE-2018-11776 ,-d,-p 13152:8080,,,
 netsquarelab/app20,v1,XSSCH,13153: XSS Challenge ,-d,-p 13153:80,,,
