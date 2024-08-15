@@ -29,7 +29,7 @@ owasp/security-shepherd,dev,SHEPHERD,13137: The OWASP Security Shepherd ,-d,-p 1
 netsquarelab/app43,v1,ODVWS,13138/39: OWASP Damn Vulnerable Web Sockets ,-d,-p 13138:80 -p 13139:8080,,,https://github.com/interference-security/DVWS
 contrastsecuritydemo/terracotta-bank,latest,TERRACOTTA,13140: Terracotta Bank: A deliberately insecure Java web application ,-d,-p 13140:8080,,,https://github.com/Try-Inc/terracotta-bank
 c0ny1/sqli-labs,0.1,SQLILAB,13141: SQLI-LABS ,-d,-p 13141:80,,,https://github.com/Audi-1/sqli-labs
-c0ny1/upload-labs,latest,UPLOADLABS,13142: upload-labs ,-d,-p 13142:80,,,https://github.com/c0ny1/upload-labs/
+c0ny1/upload-labs,latest,UPLOADLABS,13142: upload-labs 20 Labs ,-d,-p 13142:80,,,https://github.com/c0ny1/upload-labs/
 springcommunity/spring-framework-petclinic,latest,PETCLIN,13143: Spring Framework application based on JSP + Spring MVC + Spring Data JPA + Hibernate and JDBC,-d,-p 13143:8080,,,https://github.com/spring-projects/spring-petclinic
 springcommunity/spring-petclinic-rest,latest,PETCLINREST,13144: REST version of Spring PetClinic Sample Application (Swagger)  ,-d,-p 13144:9966,,,https://github.com/spring-petclinic/spring-petclinic-rest
 netsquarelab/app13,v1,RAILSGOAT,13145: OWASP RailsGoat is a vulnerable version of the Ruby on Rails Framework ,-d,-p 13145:3000,,,https://github.com/OWASP/railsgoat
@@ -41,7 +41,7 @@ netsquarelab/app17,v1,SSRF1,13150: Server-Side Request Forgery (SSRF) vulnerable
 netsquarelab/app18,v1,FLMAL,13151: File Less malware for WIn 7 IE v11.x + CVE-2014-6271 ,-d,-p 13151:80,,,
 tshethp/java-struts2-cve-2018-11776,latest,APSTR,13152: OGNL Injection - Apache Struts2 CVE-2018-11776 ,-d,-p 13152:8080,,,https://github.com/xfox64x/CVE-2018-11776
 netsquarelab/app20,v1,XSSCH,13153: XSS Challenge ,-d,-p 13153:80,,, https://github.com/do0dl3/xss-labs
-netsquarelab/app21,v1,UPL20,13154: Upload 20 Labs ,-d,-p 13154:80,,,
+
 netsquarelab/app22,v1,XSSED,13155: XSSED XSS ,-d,-p 13155:80,,,
 netsquarelab/app23,v1,WORDP,13156: Vulnerable Wordpress ,-d,-p 13156:80,,,
 netsquarelab/app24,v1,PYAPI,13157: Python API [user{1-9}/pass{1-9} admin1/pass1] ,-d,-p 13157:8081,,,
