@@ -55,12 +55,12 @@ vulnerables/cve-2014-6271,latest,SHELL,13164: ShellShock CVE-2014-6271,-d,-p 131
 vulnerables/cve-2014-0160,latest,HERTB,13165: Heartbleed  CVE-2014-0160,-d,-p 13165:443,,,https://infosecwriteups.com/heartbleed-vulnerability-exploit-using-metasploit-tryhackme-room-simple-writeup-karthikeyan-a338debda13b
 vulfocus/spring-cve_2016_4977,latest,SSOAU,13166: Remote Code Execution (RCE) in Spring Security OAuth CVE-2016-4977,-d,-p 13166:8080,,,https://www.cnblogs.com/cute-puli/p/13352579.html
 vulnerables/cve-2016-10033,latest,PHPMAIL,13167: PHPMailer < 5.2.18 Remote Code Execution CVE-2016-10033,-d,-p 13167:80,,,https://github.com/opsxcq/exploit-CVE-2016-10033
-netsquarelab/app64,v1,DVWSES,13168: DVWS Damn Vulnerable Web Services,-d,-p 13168:80,,,
-netsquarelab/app36,v1,DEFCOH,13169: Hackme - Defcon,-d,-p 13169:80,,,
-netsquarelab/app37,v1,YASC2020,13170: YASCON 2020,-d,-p 13170:80,,,
-netsquarelab/app38,v1,GH20AP,13171: GrayHat 2020 WebSploit Vulnerable Python API,-d,-p 13171:8000,,,
-netsquarelab/app39,v1,WESSS,13172: WEB Sploit Station,-d,-p 13172:80,,,
-netsquarelab/app40,v1,BTSLAB,13173: BTS Lab,-d,-p 13173:80,,,
+netsquarelab/app64,v1,DVWSES,13168: DVWS Damn Vulnerable Web Services,-d,-p 13168:80,,,XXXXXXXXXXXXXXXXXXXXXXX
+
+
+santosomar/grayhat-mmxx,latest,GH20AP,13171: GrayHat 2020 vulnerable API created in django,-d,-p 13171:8000,,, https://www.django-rest-framework.org/
+
+cryeye/btslab,latest,BTSLAB,13173: BTS PenTesting Lab,-d,-p 13173:80,,,https://github.com/CSPF-Founder/btslab
 netsquarelab/app41,v1,OBRICK,13174: OWASP Bricks,-d,-p 13174:80,,,
 netsquarelab/app42,v1,XVWAA,13175: XVWA - Xtreme Vulnerable Web Application,-d,-p 13175:80,,,
 netsquarelab/app63,v1,NOSQLILOG,13176: NoSQL Injection : Login Page,-d,-p 13176:5000,,,
