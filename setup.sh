@@ -89,16 +89,25 @@ do
       log "docker pull $REPO:$TAG # Free RAM $free_ram_gb GB"
       echo "docker pull $REPO:$TAG # Free RAM $free_ram_gb GB"
       docker pull $REPO:$TAG
-      log "docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD # Free RAM $free_ram_gb GB"
-      echo "docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD # Free RAM $free_ram_gb GB"
-      docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD
       
        if [[ -n ${POST_CMD} ]]
        then
          log "Post Command Executed. $POST_CMD"
-         sleep 20 
          $($POST_CMD)
        fi
+
+	if [[ -n ${POST_CMD} ]]
+      	then
+       		log "docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD && sleep 30 # Free RAM $free_ram_gb GB"
+      		echo "docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD && sleep 30 # Free RAM $free_ram_gb GB"
+      		docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD && sleep 30
+      		log "Post Command Executed. $POST_CMD"
+      		$($POST_CMD)
+      	else
+      		log "docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD  # Free RAM $free_ram_gb GB"
+      		echo "docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD  # Free RAM $free_ram_gb GB"
+      		docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD
+      fi       
     fi
 
    if [ $(( $free_ram_gb )) -lt 1 ]
