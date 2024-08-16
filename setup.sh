@@ -96,7 +96,7 @@ do
        if [[ -n ${POST_CMD} ]]
        then
          log "Post Command Executed. $POST_CMD"
-         sleep 60 
+         sleep 20 
          $($POST_CMD)
        fi
     fi
