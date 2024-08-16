@@ -45,7 +45,7 @@ cp ./ovlc  /bin/ovlc
 cp ./parseimages /bin/parseimages
 
 
-chmod +x /bin/ovlc /bin/parseimages /bin/utils /bin/fresh 
+chmod +x /bin/ovlc /bin/parseimages /bin/utils
 
 source /bin/utils
 
