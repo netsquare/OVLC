@@ -24,13 +24,13 @@ do
       APP_NAME[$count]=$APP_NAME
       descs[$count]=$APP_NAME
       PORT_ARGS[$count]=$PORT_ARGS
-      cmd_fresh[$count]="docker run --memory='1g' --memory-swap='1g' $ADD_OPTIONS --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD"
+      cmd_fresh[$count]="docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD"
       if [[ -n ${POST_CMD} ]]
       then
-         cmd_start[$count]="docker start $NAME"
+         cmd_start[$count]="docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD"
          cmd_post[$count]="$POST_CMD"
       else
-         cmd_start[$count]="docker start $NAME"
+         cmd_start[$count]="docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD"
          cmd_post[$count]=""
       fi
       cmd_stop[$count]="docker stop $NAME"
