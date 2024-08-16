@@ -72,9 +72,9 @@ netsquarelab/app48,v1,MCIR,13181: MCIR - Magical Code Injection Rainbow,-d,-p 13
 w4af/php-moth,latest,PHPMOTH,13182: PHP scripts used to test w3af's vulnerability detection,-d,-p 13182:80,,,https://github.com/andresriancho/php-moth
 yoshiqui/hacme-casino,latest,HACKCASINO,13183: Hacme Casino,-d,-p 13183:3000,,,https://github.com/spinkham/Hacme-Casino/
 kaizheh/apache-struts2-cve-2017-5638,latest,HACKMECVE,13184: Apache Strus cve-2017-5638,-d,-p 13184:8080,,,https://medium.com/@lucideus/exploiting-apache-struts2-cve-2017-5638-lucideus-research-83adb9490ede
-netsquarelab/app62,v1,NOMONGO,13185: NoSQL Injection : A Vulnerable Node & Mongo App,-d,-p 13185:4000 -p 27017:27017,,,
-netsquarelab/app61,v1,NOJSSER,13186: Node.js node-serialize,-d,-p 13186:80,,,
-netsquarelab/app54,v1,HACKMIC,13187: OWASP Hackademic,-d,-p 13187:80,,,
+netsquarelab/app62,v1,NOMONGO,13185: NoSQL Injection : A Vulnerable Node & Mongo App,-d,-p 13185:4000 -p 27017:27017,,,https://github.com/xuezzou/Vulnerable-nodejs
+medicean/vulapps,n_nodejs_1,NOJSSER,13186: Node.js node-serialize,-d,-p 13186:80,,,https://github.com/Medicean/VulApps/tree/master/n/nodejs/1/
+c0ny1/hackademic,master,HACKMIC,13187: OWASP Hackademic,-d,-p 13187:80,,,https://github.com/Hackademic/hackademic
 netsquarelab/app55,v1,PUZZMALL,13188: Puzzle Mall,-d,-p 13188:8080,,,
 netsquarelab/app56,v1,LFIBS,13189: LFI Labs,-d,-p 13189:80,,,
 netsquarelab/app59,v1,FAVID,13192: Flask App vulnerable to Insecure Deserialization,-d,-p 13190:3000,,,
