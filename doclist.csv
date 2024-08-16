@@ -43,10 +43,10 @@ tshethp/java-struts2-cve-2018-11776,latest,APSTR,13152: OGNL Injection - Apache 
 netsquarelab/app20,v1,XSSCH,13153: XSS Challenge ,-d,-p 13153:80,,, https://github.com/do0dl3/xss-labs
 
 
-netsquarelab/app23,v1,WORDP,13156: Vulnerable Wordpress ,-d,-p 13156:80,,,
-netsquarelab/app24,v1,PYAPI,13157: Python API [user{1-9}/pass{1-9} admin1/pass1] ,-d,-p 13157:8081,,,
-netsquarelab/app25,v1,WORDP,13158: OS Command Injection Flask ,-d,-p 13158:8080,,,
-netsquarelab/app26,v1,NRCE,13159: Node based RCE (?q='Test') ,-d,-p 13159:8080,,,
+netsquarelab/app23,v1,WORDP,13156: Vulnerable Wordpress ,-d,-p 13156:80,,, XXXXXXXXXXXXXX
+mkam/vulnerable-api-demo,latest,PYAPI,13157: Python API that is vulnerable to several different web API attacks ,-d,-p 13157:8081,,,https://github.com/mattvaldes/vulnerable-api
+netsquarelab/app25,v1,WORDP,13158: OS Command Injection Flask ,-d,-p 13158:8080,,, XXXXXXXXXXXXXX
+appsecco/node-simple-rce,latest,NRCE,13159: Simple Node app with an RCE ,-d,-p 13159:8080,,,https://github.com/appsecco/vulnerable-apps/tree/master/node-simple-rce
 netsquarelab/app27,v1,COMV,13160: Common vulnerability ,-d,-p 13160:5000,,,
 netsquarelab/app28,v1,XCATI,13161: XPATH Injection - XCAT tool,-d,-p 13161:4597,,,
 netsquarelab/app29,v1,OWVAP,13162: OWASP VulnerableApp,-d,-p 13162:9090,,,
