@@ -49,7 +49,7 @@ netsquarelab/app25,v1,WORDP,13158: OS Command Injection Flask ,-d,-p 13158:8080,
 
 
 tomforbes/xcat,latest,XCATI,13161: XPATH Injection - XCAT tool,-d,-p 13161:4597,,,https://github.com/orf/xcat_app
-netsquarelab/app29,v1,OWVAP,13162: OWASP VulnerableApp,-d,-p 13162:9090,,,
+docker pull sasanlabs/owasp-vulnerableapp,1.12.7,OWVAP,13162: OWASP VulnerableApp,-d,-p 13162:9090,,,https://owasp.org/www-project-vulnerableapp/
 netsquarelab/app30,v1,SECDOJ,13163: Secure Coding Dojo,-d,-p 13163:8080,,,
 netsquarelab/app31,v1,SHELL,13164: ShellShock CVE-2014-6271,-d,-p 13164:80,,,
 netsquarelab/app32,v1,HERTB,13165: Heartbleed  CVE-2014-0160,-d,-p 13165:443,,,
