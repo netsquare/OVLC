@@ -47,8 +47,8 @@ netsquarelab/app23,v1,WORDP,13156: Vulnerable Wordpress ,-d,-p 13156:80,,, XXXXX
 mkam/vulnerable-api-demo,latest,PYAPI,13157: Python API that is vulnerable to several different web API attacks ,-d,-p 13157:8081,,,https://github.com/mattvaldes/vulnerable-api
 netsquarelab/app25,v1,WORDP,13158: OS Command Injection Flask ,-d,-p 13158:8080,,, XXXXXXXXXXXXXX
 
-netsquarelab/app27,v1,COMV,13160: Common vulnerability ,-d,-p 13160:5000,,,
-netsquarelab/app28,v1,XCATI,13161: XPATH Injection - XCAT tool,-d,-p 13161:4597,,,
+
+tomforbes/xcat,latest,XCATI,13161: XPATH Injection - XCAT tool,-d,-p 13161:4597,,,https://github.com/orf/xcat_app
 netsquarelab/app29,v1,OWVAP,13162: OWASP VulnerableApp,-d,-p 13162:9090,,,
 netsquarelab/app30,v1,SECDOJ,13163: Secure Coding Dojo,-d,-p 13163:8080,,,
 netsquarelab/app31,v1,SHELL,13164: ShellShock CVE-2014-6271,-d,-p 13164:80,,,
