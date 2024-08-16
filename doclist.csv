@@ -66,12 +66,12 @@ bitnetsecdave/xvwa,latest,XVWAA,13175: XVWA - Xtreme Vulnerable Web Application,
 netsquarelab/app63,v1,NOSQLILOG,13176: NoSQL Injection : Login Page,-d,-p 13176:5000,,,XXXXXXXXXXXXXXXXXXXXXXXX
 appsecco/dvna,sqlite,DVNODJS,13177: Damn Vulnerable NodeJS Application (DVNA),-d,-p 13177:9090,,,https://github.com/appsecco/dvna
 psiinon/bodgeit,latest,BODGIT,13178: The BodgeIt Store /bodgeit,-d -it ,-p 13178:8080,,,https://github.com/psiinon/bodgeit?tab=readme-ov-file
-netsquarelab/app46,v1,WEBSECLAB,13179: Web Application Security Lab XSS_ALL,-d,-p 13179:13179,,/go/bin/webseclab -http=:13179,
-netsquarelab/app47,v1,WAPPSEP,13180: The Web Application Vulnerability Scanner Evaluation Project,-d -it,-p 13180:8080,,,
-netsquarelab/app48,v1,MCIR,13181: MCIR - Magical Code Injection Rainbow,-d,-p 13181:80,,,
-netsquarelab/app49,v1,PHPMOTH,13182: PHP MOTH,-d,-p 13182:80,,,
-netsquarelab/app50,v1,HACKCASINO,13183: Hacme Casino,-d,-p 13183:3000,,,
-netsquarelab/app51,v1,HACKMECVE,13184: Hackme CVE-2017-5638,-d,-p 13184:8080,,,
+netsquarelab/app46,v1,WEBSECLAB,13179: Web Application Security Lab XSS_ALL,-d,-p 13179:13179,,/go/bin/webseclab -http=:13179,https://github.com/yahoo/webseclab
+
+netsquarelab/app48,v1,MCIR,13181: MCIR - Magical Code Injection Rainbow,-d,-p 13181:80,,,https://github.com/SpiderLabs/MCIR
+w4af/php-moth,latest,PHPMOTH,13182: PHP scripts used to test w3af's vulnerability detection,-d,-p 13182:80,,,https://github.com/andresriancho/php-moth
+yoshiqui/hacme-casino,latest,HACKCASINO,13183: Hacme Casino,-d,-p 13183:3000,,,https://github.com/spinkham/Hacme-Casino/
+kaizheh/apache-struts2-cve-2017-5638,latest,HACKMECVE,13184: Apache Strus cve-2017-5638,-d,-p 13184:8080,,,https://medium.com/@lucideus/exploiting-apache-struts2-cve-2017-5638-lucideus-research-83adb9490ede
 netsquarelab/app62,v1,NOMONGO,13185: NoSQL Injection : A Vulnerable Node & Mongo App,-d,-p 13185:4000 -p 27017:27017,,,
 netsquarelab/app61,v1,NOJSSER,13186: Node.js node-serialize,-d,-p 13186:80,,,
 netsquarelab/app54,v1,HACKMIC,13187: OWASP Hackademic,-d,-p 13187:80,,,
