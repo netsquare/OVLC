@@ -117,7 +117,8 @@ do
 	sync; echo 2 > /proc/sys/vm/drop_caches
 	sync; echo 3 > /proc/sys/vm/drop_caches
    fi
-    
+log "docker stop $NAME "
+echo "docker stop $NAME "
 docker stop $NAME 
     
 count=$((count + 1))
