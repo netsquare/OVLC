@@ -75,7 +75,7 @@ kaizheh/apache-struts2-cve-2017-5638,latest,HACKMECVE,13184: Apache Strus cve-20
 netsquarelab/app62,v1,NOMONGO,13185: NoSQL Injection : A Vulnerable Node & Mongo App,-d,-p 13185:4000 -p 27017:27017,,,https://github.com/xuezzou/Vulnerable-nodejs
 medicean/vulapps,n_nodejs_1,NOJSSER,13186: Node.js node-serialize,-d,-p 13186:80,,,https://github.com/Medicean/VulApps/tree/master/n/nodejs/1/
 c0ny1/hackademic,master,HACKMIC,13187: OWASP Hackademic,-d,-p 13187:80,,,https://github.com/Hackademic/hackademic
-netsquarelab/app55,v1,PUZZMALL,13188: Puzzle Mall,-d,-p 13188:8080,,,
-netsquarelab/app56,v1,LFIBS,13189: LFI Labs,-d,-p 13189:80,,,
-netsquarelab/app59,v1,FAVID,13192: Flask App vulnerable to Insecure Deserialization,-d,-p 13190:3000,,,
-netsquarelab/app60,v1,XXELBS,13193: XXE Lab,-d,-p 13191:80,,,
+jacg310/puzzlemall,latest,PUZZMALL,13188: Puzzle Mall /puzzlemall,-d,-p 13188:8080,,,https://code.google.com/archive/p/puzzlemall/
+netsquarelab/app56,v1,LFIBS,13189: LFI Labs,-d,-p 13189:80,,,https://github.com/paralax/lfi-labs
+
+netsquarelab/app60,v1,XXELBS,13191: XXE Lab,-d,-p 13191:80,,,https://blog.csdn.net/weixin_45498459/article/details/124279239
