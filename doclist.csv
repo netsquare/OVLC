@@ -54,7 +54,7 @@ securecodingdojo/insecure.inc,latest,SECDOJ,13163: Insecure.Inc is a Java site t
 vulnerables/cve-2014-6271,latest,SHELL,13164: ShellShock CVE-2014-6271,-d,-p 13164:80,,,https://github.com/opsxcq/exploit-CVE-2014-6271
 vulnerables/cve-2014-0160,latest,HERTB,13165: Heartbleed  CVE-2014-0160,-d,-p 13165:443,,,https://infosecwriteups.com/heartbleed-vulnerability-exploit-using-metasploit-tryhackme-room-simple-writeup-karthikeyan-a338debda13b
 vulfocus/spring-cve_2016_4977,latest,SSOAU,13166: Remote Code Execution (RCE) in Spring Security OAuth CVE-2016-4977,-d,-p 13166:8080,,,https://www.cnblogs.com/cute-puli/p/13352579.html
-netsquarelab/app34,v1,PHPMAIL,13167: PHPMailer < 5.2.18 Remote Code Execution CVE-2016-10033,-d,-p 13167:80,,,
+vulnerables/cve-2016-10033,latest,PHPMAIL,13167: PHPMailer < 5.2.18 Remote Code Execution CVE-2016-10033,-d,-p 13167:80,,,https://github.com/opsxcq/exploit-CVE-2016-10033
 netsquarelab/app64,v1,DVWSES,13168: DVWS Damn Vulnerable Web Services,-d,-p 13168:80,,,
 netsquarelab/app36,v1,DEFCOH,13169: Hackme - Defcon,-d,-p 13169:80,,,
 netsquarelab/app37,v1,YASC2020,13170: YASCON 2020,-d,-p 13170:80,,,
