@@ -62,9 +62,9 @@ santosomar/grayhat-mmxx,latest,GH20AP,13171: GrayHat 2020 vulnerable API created
 
 cryeye/btslab,latest,BTSLAB,13173: BTS PenTesting Lab,-d,-p 13173:80,,,https://github.com/CSPF-Founder/btslab
 netsquarelab/app41,v1,OBRICK,13174: OWASP Bricks,-d,-p 13174:80,,,
-netsquarelab/app42,v1,XVWAA,13175: XVWA - Xtreme Vulnerable Web Application,-d,-p 13175:80,,,
-netsquarelab/app63,v1,NOSQLILOG,13176: NoSQL Injection : Login Page,-d,-p 13176:5000,,,
-netsquarelab/app44,v1,DVNODJS,13177: Damn Vulnerable NodeJS Application (DVNA),-d,-p 13177:9090,,,
+bitnetsecdave/xvwa,latest,XVWAA,13175: XVWA - Xtreme Vulnerable Web Application,-d,-p 13175:80,,,https://github.com/s4n7h0/xvwa
+netsquarelab/app63,v1,NOSQLILOG,13176: NoSQL Injection : Login Page,-d,-p 13176:5000,,,XXXXXXXXXXXXXXXXXXXXXXXX
+appsecco/dvna,sqlite,DVNODJS,13177: Damn Vulnerable NodeJS Application (DVNA),-d,-p 13177:9090,,,https://github.com/appsecco/dvna
 netsquarelab/app45,v1,BODGIT,13178: Bodgeit,-d -it ,-p 13178:8080,,,
 netsquarelab/app46,v1,WEBSECLAB,13179: WebSecLab,-d,-p 13179:13179,,/go/bin/webseclab -http=:13179,
 netsquarelab/app47,v1,WAPPSEP,13180: The Web Application Vulnerability Scanner Evaluation Project,-d -it,-p 13180:8080,,,
