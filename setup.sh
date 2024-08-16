@@ -89,9 +89,9 @@ do
       log "docker pull $REPO:$TAG # Free RAM $free_ram_gb GB"
       echo "docker pull $REPO:$TAG # Free RAM $free_ram_gb GB"
       docker pull $REPO:$TAG
-      log "docker run $ADD_OPTIONS --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD # Free RAM $free_ram_gb GB"
-      echo "docker run $ADD_OPTIONS --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD # Free RAM $free_ram_gb GB"
-      docker run $ADD_OPTIONS --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD
+      log "docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD # Free RAM $free_ram_gb GB"
+      echo "docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD # Free RAM $free_ram_gb GB"
+      docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD
       
        if [[ -n ${POST_CMD} ]]
        then
