@@ -42,7 +42,7 @@ netsquarelab/app18,v1,FLMAL,13151: File Less malware for WIn 7 IE v11.x + CVE-20
 tshethp/java-struts2-cve-2018-11776,latest,APSTR,13152: OGNL Injection - Apache Struts2 CVE-2018-11776 ,-d,-p 13152:8080,,,https://github.com/xfox64x/CVE-2018-11776
 netsquarelab/app20,v1,XSSCH,13153: XSS Challenge ,-d,-p 13153:80,,, https://github.com/do0dl3/xss-labs
 securecodingdojo/trainingportal,latest,CODTR,13154: Platform for delivering secure coding training knowledge.,-d,-p 13154:8081,,,https://github.com/OWASP/SecureCodingDojo
-
+jeroenwillemsen/wrongsecrets,latest-no-vault,WRONGS,13155: OWASP WrongSecrets project,-d,-p 13155:8080,,,https://github.com/OWASP/wrongsecrets $$$
 netsquarelab/app23,v1,WORDP,13156: Vulnerable Wordpress ,-d,-p 13156:80,,, XXXXXXXXXXXXXX
 mkam/vulnerable-api-demo,latest,PYAPI,13157: Python API that is vulnerable to several different web API attacks ,-d,-p 13157:8081,,,https://github.com/mattvaldes/vulnerable-api
 netsquarelab/app25,v1,WORDP,13158: OS Command Injection Flask ,-d,-p 13158:8080,,, XXXXXXXXXXXXXX
