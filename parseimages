@@ -27,7 +27,7 @@ do
       cmd_fresh[$count]="docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD"
       if [[ -n ${POST_CMD} ]]
       then
-         cmd_start[$count]="docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD && sleep 60"
+         cmd_start[$count]="docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD"
          cmd_post[$count]="$POST_CMD"
       else
          cmd_start[$count]="docker run $ADD_OPTIONS --rm --name $NAME $PORT_ARGS $REPO:$TAG $POST_DOC_CMD"
