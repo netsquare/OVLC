@@ -66,7 +66,7 @@ bitnetsecdave/xvwa,latest,XVWAA,13175: XVWA - Xtreme Vulnerable Web Application,
 netsquarelab/app63,v1,NOSQLILOG,13176: NoSQL Injection : Login Page,-d,-p 13176:5000,,,XXXXXXXXXXXXXXXXXXXXXXXX
 appsecco/dvna,sqlite,DVNODJS,13177: Damn Vulnerable NodeJS Application (DVNA),-d,-p 13177:9090,,,https://github.com/appsecco/dvna
 psiinon/bodgeit,latest,BODGIT,13178: The BodgeIt Store /bodgeit,-d -it ,-p 13178:8080,,,https://github.com/psiinon/bodgeit?tab=readme-ov-file
-netsquarelab/app46,v1,WEBSECLAB,13179: Web Application Security Lab XSS_ALL,-d,-p 13179:13179,,docker exec WEBSECLAB /go/bin/webseclab -http=:13179,https://github.com/yahoo/webseclab
+netsquarelab/app46,v1,WEBSECLAB,13179: Web Application Security Lab XSS_ALL,-d,-p 13179:13179,,docker exec WEBSECLAB /go/bin/webseclab -http=:13179 &,https://github.com/yahoo/webseclab
 
 netsquarelab/app48,v1,MCIR,13181: MCIR - Magical Code Injection Rainbow,-d,-p 13181:80,,,https://github.com/SpiderLabs/MCIR
 w4af/php-moth,latest,PHPMOTH,13182: PHP scripts used to test w3af's vulnerability detection,-d,-p 13182:80,,,https://github.com/andresriancho/php-moth
