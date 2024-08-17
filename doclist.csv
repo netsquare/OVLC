@@ -80,3 +80,65 @@ netsquarelab/app56,v1,LFIBS,13189: LFI Labs,-d,-p 13189:80,,,https://github.com/
 
 netsquarelab/app60,v1,XXELBS,13191: XXE Lab,-d,-p 13191:80,,,https://blog.csdn.net/weixin_45498459/article/details/124279239
 
+
+
+
+
+
+
+
+blabla1337/owasp-skf-lab,auth-bypass,PYAU0,13200: Python - Auth Bypass,-d,-p 13200:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,auth-bypass-1,PYAU1,13201: Python - Auth Bypass 1,-d,-p 13201:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,auth-bypass-2,PYAU2,13202: Python - Auth Bypass 2,-d,-p 13202:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,auth-bypass-3,PYAU3,13203: Python - Auth Bypass 3,-d,-p 13203:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-auth-bypass,JSAU0,13204: NodeJS - Auth Bypass,-d,-p 13204:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-auth-bypass-1,JSAU1,13205: NodeJS - Auth Bypass 1,-d,-p 13205:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-auth-bypass-2,JSAU2,13206: NodeJS - Auth Bypass 2,-d,-p 13206:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-auth-bypass-3,JSAU3,13207: NodeJS - Auth Bypass 3,-d,-p 13207:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,java-auth-bypass1,JAAU1,13208: Java - Auth-bypass 1,-d,-p 13208:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,java-auth-bypass2,JAAU2,13209: Java - Auth-bypass 2,-d,-p 13209:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,java-auth-bypass3,JAAU3,13210: Java - Auth-bypass 3,-d,-p 13210:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,java-client-side-restriction-bypass,JCRBY,131XX: Client Side Restriction Bypass,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,client-side-restriction-bypass-2,CRBYPY,131XX: Client Side Restriction Bypass - Harder,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-csti,CSTINJ,131XX: Client Side Template Injection (CSTI),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,cmd,PYCIN,131XX: Python - Command Injection (CMD),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,cmd2,PYCIN2,131XX: Python - Command Injection (CMD2),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,cmd3,PYCIN3,131XX: Python - Command Injection (CMD3),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,cmd4,PYCIN4,131XX: Python - Command Injection (CMD4),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-cmd,NJCMD,131XX: NodeJS - Command Injection (CMD),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-cmd2,NJCMD2,131XX: NodeJS - Command Injection (CMD2),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-cmd3,NJCMD3,131XX: NodeJS - Command Injection (CMD3),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-cmd4,NJCMD4,131XX: NodeJS - Command Injection (CMD4),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,java-cmd,JVCMD,131XX: Java - Command Injection (CMD),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,java-cmd2,JVCMD2,131XX: Java - Command Injection (CMD2),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,java-cmd3,JVCMD3,131XX: Java - Command Injection (CMD3),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,java-cmd4,JVCMD4,131XX: Java - Command Injection (CMD4),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,cmd-blind,PYBLINCMD,131XX: Python - Command Injection Blind (CMD-Blind),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-cmd-blind,JSBLCMD,131XX: NodeJS - Command Injection Blind (CMD-Blind),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,java-cmd-blind,JCIBL,131XX: Java - Command Injection Blind (CMD-Blind),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-csp,JSCSP,131XX: Content-Security-Policy (CSP),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,java-cors,CORSJAV,131XX: CORS exploitation,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-credentials-guessing-2,CRDG,131XX: Credentials Guessing,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,java-des-java,JADES,131XX: Java - Deserialisation Java (DES-Java),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,des-yaml,DESYAML,131XX: Python - Deserialisation Yaml (DES-Yaml),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,des-pickle,DESPICK,131XX: Python - Deserialisation Pickle (DES-Pickle),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,des-pickle-2,DESPICK2,131XX: Python - Deserialisation Pickle 2 (DES-Pickle-2),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,java-dos-regex,REGXDOS,131XX: DoS Regex,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,formula-injection,FORMULA,131XX: Formula Injection,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,graphql-dos-resource-exhaustion,GQLDOS,131XX: GraphQL DOS,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-graphql-idor,GQLIDOR,131XX: GraphQL IDOR,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-graphql-injection,GQLINJ,131XX: GraphQL Injections,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,graphql-info-introspection,GQLINTR,131XX: GraphQL Introspection,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-graphql-mutations,GQLMUT,131XX: GraphQL Mutations,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,java-jwt-null,JWTNULL,131XX: JWT Null,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,java-jwt-secret,JWTSEC,131XX: JWT Secret,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-ldap-injection,LDAPINSK,131XX: Ldap Injection,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-ldap-injection-harder,LDAPINHE,131XX: Ldap Injection - harder,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-prototype-pollution,NODEPROTOPOL,131XX: NodeJS - Prototype Pollution,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-racecondition,RCON,131XX: Race Condition,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-racecondition-file-write,RCONFILE,131XX: Race Condition File-Write,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,js-rtlo,RTLLTR,131XX: Right To Left Override (RTLO),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,ssti,PYSSTI,131XX: Python - Server Side Template Injection (SSTI),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,java-ssti,JAVSSTI,131XX: Java - Server Side Template Injection (SSTI),-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+blabla1337/owasp-skf-lab,tls-downgrade,TLSDOWN,131XX: TLS Downgrade,-d,-p 131XX:5000,,,https://github.com/Security-Knowledge-Framework/Labs
+
