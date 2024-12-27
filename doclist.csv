@@ -45,7 +45,7 @@ securecodingdojo/trainingportal,latest,CODTR,13154: Platform for delivering secu
 jeroenwillemsen/wrongsecrets,latest-no-vault,WRONGS,13155: OWASP WrongSecrets project,-d,-p 13155:8080,,,https://github.com/OWASP/wrongsecrets $$$
 netsquarelab/app23,v1,WORDP,13156: Vulnerable Wordpress ,-d,-p 13156:80,,, XXXXXXXXXXXXXX
 mkam/vulnerable-api-demo,latest,PYAPI,13157: Python API that is vulnerable to several different web API attacks ,-d,-p 13157:8081,,,https://github.com/mattvaldes/vulnerable-api
-netsquarelab/app25,v1,WORDP,13158: OS Command Injection Flask ,-d,-p 13158:8080,,, XXXXXXXXXXXXXX ===>>>>>
+netsquarelab/app25,v1,WORDPOS,13158: OS Command Injection Flask ,-d,-p 13158:8080,,, XXXXXXXXXXXXXX ===>>>>>
 tomforbes/xcat,latest,XCATI,13161: XPATH Injection - XCAT tool,-d,-p 13161:4597,,,https://github.com/orf/xcat_app
 sasanlabs/owasp-vulnerableapp,1.12.7,OWVAP,13162: OWASP VulnerableApp,-d,-p 13162:9090,,,https://owasp.org/www-project-vulnerableapp/
 securecodingdojo/insecure.inc,latest,SECDOJ,13163: Insecure.Inc is a Java site that demonstrates simple exploits based on SANS Top 25/OWASP Top 10,-d,-p 13163:8080,,,https://github.com/OWASP/SecureCodingDojo
