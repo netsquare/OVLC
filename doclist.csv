@@ -112,10 +112,7 @@ blabla1337/owasp-skf-lab,des-pickle-2,DESPICK2,13236: Python - Deserialisation P
 blabla1337/owasp-skf-lab,java-dos-regex,REGXDOS,13237: DoS Regex,-d,-p 13237:5000,,,https://github.com/Security-Knowledge-Framework/Labs
 blabla1337/owasp-skf-lab,formula-injection,FORMULA,13238: Formula Injection,-d,-p 13238:5000,,,https://github.com/Security-Knowledge-Framework/Labs
 blabla1337/owasp-skf-lab,graphql-dos-resource-exhaustion,GQLDOS,13239: GraphQL DOS,-d,-p 13239:5000,,,https://github.com/Security-Knowledge-Framework/Labs
-blabla1337/owasp-skf-lab,js-graphql-idor,GQLIDOR,13240: GraphQL IDOR,-d,-p 13240:5000,,,https://github.com/Security-Knowledge-Framework/Labs
-blabla1337/owasp-skf-lab,js-graphql-injection,GQLINJ,13241: GraphQL Injections,-d,-p 13241:5000,,,https://github.com/Security-Knowledge-Framework/Labs
 blabla1337/owasp-skf-lab,graphql-info-introspection,GQLINTR,13242: GraphQL Introspection,-d,-p 13242:5000,,,https://github.com/Security-Knowledge-Framework/Labs
-blabla1337/owasp-skf-lab,js-graphql-mutations,GQLMUT,13243: GraphQL Mutations,-d,-p 13243:5000,,,https://github.com/Security-Knowledge-Framework/Labs
 blabla1337/owasp-skf-lab,java-jwt-null,JWTNULL,13244: JWT Null,-d,-p 13244:5000,,,https://github.com/Security-Knowledge-Framework/Labs
 blabla1337/owasp-skf-lab,java-jwt-secret,JWTSEC,13245: JWT Secret,-d,-p 13245:5000,,,https://github.com/Security-Knowledge-Framework/Labs
 blabla1337/owasp-skf-lab,js-ldap-injection,LDAPINSK,13246: Ldap Injection,-d,-p 13246:5000,,,https://github.com/Security-Knowledge-Framework/Labs
