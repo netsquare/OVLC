@@ -92,7 +92,6 @@ blabla1337/owasp-skf-lab,cmd3,PYCIN3,13216: Python - Command Injection (CMD3),-d
 blabla1337/owasp-skf-lab,cmd4,PYCIN4,13217: Python - Command Injection (CMD4),-d,-p 13217:5000,,,https://github.com/Security-Knowledge-Framework/Labs
 blabla1337/owasp-skf-lab,js-cmd,NJCMD,13218: NodeJS - Command Injection (CMD),-d,-p 13218:5000,,,https://github.com/Security-Knowledge-Framework/Labs
 blabla1337/owasp-skf-lab,js-cmd2,NJCMD2,13219: NodeJS - Command Injection (CMD2),-d,-p 13219:5000,,,https://github.com/Security-Knowledge-Framework/Labs
-blabla1337/owasp-skf-lab,js-cmd3,NJCMD3,13220: NodeJS - Command Injection (CMD3),-d,-p 13220:5000,,,https://github.com/Security-Knowledge-Framework/Labs
 blabla1337/owasp-skf-lab,js-cmd4,NJCMD4,13221: NodeJS - Command Injection (CMD4),-d,-p 13221:5000,,,https://github.com/Security-Knowledge-Framework/Labs
 blabla1337/owasp-skf-lab,java-cmd,JVCMD,13222: Java - Command Injection (CMD),-d,-p 13222:5000,,,https://github.com/Security-Knowledge-Framework/Labs
 blabla1337/owasp-skf-lab,java-cmd2,JVCMD2,13223: Java - Command Injection (CMD2),-d,-p 13223:5000,,,https://github.com/Security-Knowledge-Framework/Labs
