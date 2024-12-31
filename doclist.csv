@@ -47,7 +47,7 @@ netsquarelab/app23,v1,WORDP,13156: Vulnerable Wordpress ,-d,-p 13156:80,,, XXXXX
 mkam/vulnerable-api-demo,latest,PYAPI,13157: Python API that is vulnerable to several different web API attacks ,-d,-p 13157:8081,,,https://github.com/mattvaldes/vulnerable-api
 netsquarelab/app25,v1,WORDPOS,13158: OS Command Injection Flask ,-d,-p 13158:8080,,, XXXXXXXXXXXXXX ===>>>>>
 tomforbes/xcat,latest,XCATI,13161: XPATH Injection - XCAT tool,-d,-p 13161:4597,,,https://github.com/orf/xcat_app
-sasanlabs/owasp-vulnerableapp,1.12.9,OWVAP,13162: OWASP VulnerableApp,-d,-p 13162:9090,,,https://owasp.org/www-project-vulnerableapp/
+sasanlabs/owasp-vulnerableapp-facade,1.2.1,OWVAP,13162: OWASP VulnerableApp,-d,-p 13162:80,,,https://owasp.org/www-project-vulnerableapp/
 securecodingdojo/insecure.inc,latest,SECDOJ,13163: Insecure.Inc is a Java site that demonstrates simple exploits based on SANS Top 25/OWASP Top 10,-d,-p 13163:8080,,,https://github.com/OWASP/SecureCodingDojo
 vulnerables/cve-2014-6271,latest,SHELL,13164: ShellShock CVE-2014-6271,-d,-p 13164:80,,,https://github.com/opsxcq/exploit-CVE-2014-6271
 vulnerables/cve-2014-0160,latest,HERTB,13165: Heartbleed  CVE-2014-0160,-d,-p 13165:443,,,https://infosecwriteups.com/heartbleed-vulnerability-exploit-using-metasploit-tryhackme-room-simple-writeup-karthikeyan-a338debda13b
