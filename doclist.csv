@@ -252,3 +252,4 @@ netsquarelab/c427,v1,APPC427,13385 : OS command Injection on static Page Blind,-
 netsquarelab/c428,v1,APPC428,13386 : Path Traversal CVE-2021-41773,-d,-p 13386:80,,,
 netsquarelab/c429,v1,APPC429,13387 : LDAP server for APPC430,-d,-p 389:389,,,
 netsquarelab/c430,v1,APPC430,13388 : LDAP Injection - First start 13387,-d --link APPC429,-p 13388:80,,,
+vulfocus/spring_cve_2022_22947,latest,SPRINGCI,13389 : CVE-2022-22947 Spring Cloud Gateway Actuator API SpEL,-d,-p 13389:8080,,,https://github.com/luckyfuture0177/VULOnceMore/blob/main/Java%E6%A1%86%E6%9E%B6/CVE-2022-22947SpringCloudGatewaySpEL%E4%BB%A3%E7%A0%81%E6%B3%A8%E5%85%A5.md
