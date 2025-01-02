@@ -1,5 +1,7 @@
 #REPO,TAG,NAME,APP_NAME,ADD_OPTIONS,PORT_ARGS,POST_DOC_CMD,POST_CMD,REF
-webgoat/webgoat,latest,WEBGOAT,13108/9: WEBGOAT,-d,-p 13108:8080 -p 13109:9090,,,https://github.com/WebGoat/WebGoat
+blueteamsteve/cve-2021-41773,with-cgid,APATHTR,13107: CVE-2021-41773 Apache path traversal,-d,-p 13107:80,,,https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2021-41773
+webgoat/webgoat,latest,WEBGOAT,13108: WEBGOAT,-d,-p 13108:8080 ,,,https://github.com/WebGoat/WebGoat
+webgoat/webgoat,latest,WEBGOAT,13109: WEBGOAT WEBWOLF,-d,-p 13109:9090,,,https://github.com/WebGoat/WebGoat
 appsecco/dsvw,latest,DSVW,13110: Damn Small Vulnerable Web Application,-d,-p 13110:8000,,,https://github.com/stamparm/DSVW
 hpandro/xxe_docx,latest,DOCX_XXE,13111: XXE via .docx file parsing,-d, -p 13111:80,,,https://raviramesh.info/xml-attacks.html
 hpandro/xpath,latest,XPATH,13112: XPATH Injection,-d, -p 13112:80,,,https://raviramesh.info/xml-attacks.html
