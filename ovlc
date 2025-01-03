@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+# OVLC by Ravikumar Paghdal
+
 # Check if the user is root
 if [ "$(id -u)" -ne "0" ]; then
   echo "ovlc must be run as root."
@@ -13,20 +19,56 @@ source parseimages
 : ${DIALOG_START=0}
 : ${DIALOG_STOP=3}
 : ${DIALOG_EXIT=1}
-
 fundialog=${fundialog=dialog}
 
 trap ctrl_c INT
 
 declare -a choices
-ipaddr=`ip addr | grep "ens" -A 2 | cut -f1 -d'/' |  awk 'FNR == 4 {print $2}'`
+ipaddr=$(ip -4 addr show | grep -v "127.0.0.1" | grep -oP '(?<=inet\s)\d+(\.\d+){3}' | head -n 1)
+
+show_progress() {
+    local docker_command="$1"    # The command to run
+    local max=100                # Maximum value for progress bar
+    local total_time=2           # Target time for full progress in seconds (2 seconds)
+    local dialog_title="$2"      # Title for the dialog box
+    local dialog_gauge_message="$3"  # Message for the gauge
+    
+    # Start the timer and record the start time
+    start_time=$(date +%s)
+
+    # Execute the command in the background
+    eval "$docker_command" > /dev/null 2>&1 &
+    docker_pid=$!
+
+    # Open the progress bar dialog
+    (
+        progress=0
+        while [ -d /proc/$docker_pid ]; do
+            # Calculate elapsed time and calculate progress proportionally
+            elapsed_time=$(($(date +%s) - $start_time))
+            
+            # Calculate progress as a percentage (keep it in bounds between 0 and 100)
+            progress=$(( (elapsed_time * max) / total_time ))
+            if [ $progress -gt $max ]; then
+                progress=$max
+            fi
+            
+            # Output current progress to the dialog (show the percentage of completion)
+            echo $progress
+            sleep 0.1  # Update the progress every 0.1 seconds
+        done
+    ) | dialog --title "$dialog_title" --gauge "$dialog_gauge_message" 10 70 0
+
+    # Wait for the Docker process to complete
+    wait $docker_pid
+}
 
 while true
 do
 
 upcon=`docker ps`
 num_upcon=`echo "$upcon" | wc -l`
-free_ram_gb=`free --giga | grep -i mem | awk '{print $4}'`
+free_ram_gb=$(echo "scale=2; $(free -m | grep -i mem | awk '{print $4}') / 1024" | bc)
 
 j=1
 for i in $(seq 1 $((count - 1)))
@@ -43,10 +85,10 @@ do
 done
 
 x=`$fundialog --stdout --clear \
-   --backtitle "OVLC v0.1 ${ipaddr} [Lab Started :$((num_upcon - 1))*] [Free RAM (GB) :${free_ram_gb}]" \
+   --backtitle "OVLC (Open Source Vulnerable labs collections) v1.0 IP:${ipaddr}" \
    --ok-label "START" --cancel-label "EXIT"  \
    --extra-button --extra-label "STOP"  \
-   --menu "Applications List" 0 0 10 "${choices[@]}" `
+   --menu "Applications List [Lab Started :$((num_upcon - 1))*] [Free RAM (GB) :${free_ram_gb}]" 0 0 13 "${choices[@]}" `
 
 status=$?
 
@@ -54,35 +96,34 @@ clear
 
 case $status in
 $DIALOG_START)
-   if [ $free_ram_gb -gt 1 ]
+    check_status=`echo "$upcon"  | grep "${REPONAME[$x]}" | wc -l`
+    if [ $check_status -eq 0 ]
     then
-      check_status=`echo "$upcon"  | grep "${REPONAME[$x]}" | wc -l`
-      if [ $check_status -eq 0 ]
-      then
-        temp=$(${cmd_start[$x]})
-        for i in $(seq 0 10 100) ; do sleep 4; echo $i ; done | dialog --title "Starting container" \
-        --gauge "${APP_NAME[$x]} \nPort Mapping with IP ${ipaddr} localhost  ${PORT_ARGS[$x]}\nPlease wait for 45 Sec...." 10 70 0
-        temp=$(${cmd_post[$x]})
-      else
-        dialog --title "Status" --msgbox "${APP_NAME[$x]} Docker alrady running.." 0 0
-      fi 
+        if [ "$(echo "$free_ram_gb > 0.5" | bc)" -eq 1 ]
+        then
+            ports=$(echo "${PORT_ARGS[$x]}" | grep -oP '(-p\s+\d+):' | awk -F'[ :]' '{print $2}')
+            show_progress "${cmd_start[$x]}" "Starting container" "${APP_NAME[$x]} \nApplication running on IP ${ipaddr} and port ${ports}\n\nWait for this dialog to close."
+            temp=$(${cmd_post[$x]})
+        else
+        dialog --title "Alert" --msgbox "Free RAM is less then 500 MB, please stop nonusable app first and try again." 0 0
+        fi  
     else
-        dialog --title "Alert" --msgbox "Free RAM is less then 1 GB, please stop nonusable app first and try again." 0 0
+        dialog --title "Status" --msgbox "${APP_NAME[$x]} alrady running.." 0 0
     fi ;;
- $DIALOG_STOP)
+$DIALOG_STOP)
      check_status=`echo "$upcon"  | grep "${REPONAME[$x]}" | wc -l`
      if [ $check_status -eq 0 ]
      then
         dialog --title "Status" --msgbox "${APP_NAME[$x]} App not running.." 0 0
      else
-        temp=$(${cmd_stop[$x]} &)
-        for i in $(seq 0 10 100) ; do sleep 1; echo $i ; done | dialog --title "Stoping container" \
-        --gauge "${APP_NAME[$x]} \nPlease wait for 10 Sec...." 10 70 0
+        show_progress "${cmd_stop[$x]}" "Stoping container" "${APP_NAME[$x]}" 
+        sync; echo 1 > /proc/sys/vm/drop_caches
+        sync; echo 2 > /proc/sys/vm/drop_caches
+        sync; echo 3 > /proc/sys/vm/drop_caches
      fi ;;
- $DIALOG_EXIT)
+$DIALOG_EXIT)
       break ;;
 esac
-
 done
 
 ctrl_c
