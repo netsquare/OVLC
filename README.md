@@ -9,15 +9,12 @@ Warning
 Installation
 ----
 
-Step 1: Install Ubuntu 22.04.3 LTS 
-
-Step 2 : Switch to root user
-
-Step 3 : git clone https://github.com/netsquare/OVLC.git
-
-Step 4 : bash setup.sh
-
-Step 5 : reboot
+1. Install the Ubuntu Desktop LTS version in the virtual machine.
+2. Open the terminal and switch to the root user by using the "sudo su" command.
+3. #git clone https://github.com/netsquare/OVLC.git
+4. #bash setup.sh
+5. #reboot
+6. Open the terminal and switch to the root user by using the "sudo su" command. Then, execute the "ovlc" command.
 
 Usage
 ----
@@ -30,6 +27,3 @@ Start the lab
 
 ![start](image/start.png)
 
-
-Links
-----
