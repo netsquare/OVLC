@@ -25,6 +25,7 @@ trap ctrl_c INT
 
 declare -a choices
 ipaddr=$(ip -4 addr show | grep -v "127.0.0.1" | grep -oP '(?<=inet\s)\d+(\.\d+){3}' | head -n 1)
+os_clear_cache
 
 show_progress() {
     local docker_command="$1"    # The command to run
@@ -117,11 +118,10 @@ $DIALOG_STOP)
         dialog --title "Status" --msgbox "${APP_NAME[$x]} App not running.." 0 0
      else
         show_progress "${cmd_stop[$x]}" "Stoping container" "${APP_NAME[$x]}" 
-        sync; echo 1 > /proc/sys/vm/drop_caches
-        sync; echo 2 > /proc/sys/vm/drop_caches
-        sync; echo 3 > /proc/sys/vm/drop_caches
+        os_clear_cache
      fi ;;
 $DIALOG_EXIT)
+      os_clear_cache
       break ;;
 esac
 done
