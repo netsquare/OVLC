@@ -12,6 +12,44 @@ if [ "$(id -u)" -ne "0" ]; then
   exit 1  # Exit with an error code
 fi
 
+TEXT_CONTENT=$(cat <<'EOF'
+.d88888b.  888     888 888       .d8888b.  
+d88P" "Y88b 888     888 888      d88P  Y88b 
+888     888 888     888 888      888    888 
+888     888 Y88b   d88P 888      888        
+888     888  Y88b d88P  888      888        
+888     888   Y88o88P   888      888    888 
+Y88b. .d88P    Y888P    888      Y88b  d88P 
+ "Y88888P"      Y8P     88888888  "Y8888P"  
+                                                                 
+         Developed by @_RaviRamesh  
+             
+EOF
+)
+
+# Function to center text
+center_text() {
+  local text="$1"
+  local terminal_width=$(tput cols)
+  local text_width=${#text}
+  local padding=$(( (terminal_width - text_width) / 2 ))
+  printf "%${padding}s" ""  # Add leading spaces
+  echo "$text"
+}
+
+# Clear the screen
+clear
+
+# Animate the text content with a delay
+while IFS= read -r line; do
+  centered_line=$(center_text "$line")
+  echo "$centered_line"
+  sleep 0.5  # Delay in seconds (500ms)
+done <<< "$TEXT_CONTENT"
+
+# Reset terminal to default
+clear
+
 source utils
 source parseimages
 
