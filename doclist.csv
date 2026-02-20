@@ -25,7 +25,7 @@ adamdoupe/wackopicko,latest,WACKOPICKO,13129: WackoPicko ,-d,-p 13129:80,,,https
 neuralegion/brokencrystals,latest,BRO_CRY,13130: Broken Crystals ,-d,-p 13130:3000,,,https://github.com/NeuraLegion/brokencrystals
 neuralegion/xxelab,latest,XXE_LAB,13131: XML eXternal Entity vulnerability ,-d,-p 13131:80,,,https://github.com/NeuraLegion/xxelab
 bhattsameer/jsdebugginglab,latest,JSDEBUGG,13132: Client Side Encryption - JS debugging. ,-d,-p 13132:80,,,https://bhattsameer.github.io/2021/01/01/client-side-encryption-bypass-part-1.html
-webpwnized/mutillidae,www,MUTIL,13133/34: Mutillidae II ,-d,-p 13133:80 -p 13134:443,,,https://github.com/webpwnized/mutillidae
+hpandro/mutillidae2,latest,MUTIL,13133/34: Mutillidae II ,-d,-p 13133:80 -p 13134:443,,,https://github.com/webpwnized/mutillidae
 amolnaik4/bodhi_app,latest,BODHI,13135/36: Bodhi - Client-Side Vulnerability Playground ,-d,-p 13135:80 -p 13136:8000,,,https://github.com/amolnaik4/bodhi
 owasp/security-shepherd,dev,SHEPHERD,13137: The OWASP Security Shepherd ,-d,-p 13137:8080,,,https://github.com/OWASP/SecurityShepherd XXXXXXXXXXXXXXXXXXXXXXXXX
 netsquarelab/app43,v1,ODVWS,13138/39: OWASP Damn Vulnerable Web Sockets ,-d,-p 13138:80 -p 13139:8080,,,https://github.com/interference-security/DVWS
